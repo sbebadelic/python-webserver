@@ -8,7 +8,7 @@ def hello():
     hostname = socket.gethostname()
     ip_address = socket.gethostbyname(hostname)
     result = 0
-    for i in range(1, 1000000):
+    for i in range(1, 100000):
         result += i ** 2
     return f"Hello, wafaewfraewfarld! {ip_address}"
 

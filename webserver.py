@@ -11,7 +11,7 @@ def hello():
     hostname = socket.gethostname()
     ip_address = socket.gethostbyname(hostname)
     result = 0
-    for i in range(1, 100000):
+    for i in range(1, 10000):
         result += i ** 2
     cache.incr('hits')
     
